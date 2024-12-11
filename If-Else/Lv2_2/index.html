@@ -8,18 +8,21 @@
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
-    <form>
-      <label for="aqi">Luftqualität: </label>
-      <input
-        type="range"
-        name="aqi-number"
-        id="aqi"
-        min="0"
-        max="100"
-        value="20"
-      />
-    </form>
-    <h2 class="health-concern-level"></h2>
-    <h2 class="health-effect-level"></h2>
+    <div>
+      <form onchange="checkAirQuality()">
+        <label for="aqi"></label>
+        <p class="air-quality-number">Luft-Qualität:</p>
+        <input
+          type="range"
+          name="aqi-input"
+          id="aqi"
+          min="0"
+          max="150"
+          value="20"
+        />
+      </form>
+      <h2 class="health-concern-level"></h2>
+      <h2 class="health-effect-level"></h2>
+    </div>
   </body>
 </html>

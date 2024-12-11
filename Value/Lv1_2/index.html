@@ -7,5 +7,12 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="./assets/js/main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <form onsubmit="calculateAge(); return false">
+      <label for="birthYear">Gib dein Geburtsjahr ein </label>
+      <input type="number" name="birthYear" id="birthYear" />
+      <button type="submit">Berechne mein Alter</button>
+    </form>
+    <p class="your-age"></p>
+  </body>
 </html>

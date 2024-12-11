@@ -11,7 +11,13 @@
     <h1>Wetter-Qualität</h1>
     <form onsubmit="weather(); return false">
       <label for="weatherQuality"></label>
-      <input type="number" name="weather-input" id="weatherQuality" />
+      <input
+        type="number"
+        name="weather-input"
+        id="weatherQuality"
+        min="1"
+        max="10"
+      />
       <button type="submit">Senden</button>
     </form>
     <p class="weather-quality-rating"></p>
